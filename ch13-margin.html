@@ -13,9 +13,12 @@
 			float: left;
 			margin-left: 50px;
 		}
-		#parent {
+		.parent {
 			width: 100%;
 			height: 300px;
+		}
+		.centred {
+			margin: 0px auto;
 		}
 		div {
 			border: 1px solid red;
@@ -30,9 +33,12 @@
 	</style>
 </head>
 <body>
-	<div id="parent">
+	<div class="parent">
 		<div id="one"><p>this is the left div</p></div>
 		<div id="two"><p>this is the right div. left and right margins dont collapse. only top and bottom.</p></div>
+	</div>
+	<div class="parent">
+		<div class="centred">This is centred div using auto for margin left and right.</div>
 	</div>
 </body>
 </html>
